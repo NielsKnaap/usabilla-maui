@@ -19,11 +19,29 @@ We have been attempting to create a NuGet package for our project, but unfortuna
 
 As a result, the only way to use our repository at the moment is to clone it into your solution. To do so, you need to follow these steps:
 
-1. Open your solution in Visual Studio / Rider.
+1. Open your solution in Visual Studio (On time of writing Rider can't really handle MAUI binding libraries)
 2. Go to the "Solution Explorer" panel on the right-hand side of the screen.
 3. Right-click on the solution, and select "Add" -> "Existing Project".
 4. Navigate to the location where you cloned our repository, and select the appropriate project file (either the iOS or Android version).
 5. Click "OK" to add the project to your solution.
+
+- Now we need to add a reference to the projects inside the MAUI project where we want to use it:
+6. Right click on the project -> Edit project file
+7. We want to add the platform specific project only when building for that framework, this is done by adding the following between the `<Project>` tag:
+```
+<ItemGroup Condition="'$(TargetFramework)' == 'net7.0-android'">
+    <ProjectReference Include="..\Usabilla\Android\UsabillaAndroidSdk.csproj" />
+</ItemGroup>
+
+<ItemGroup Condition="'$(TargetFramework)' == 'net7.0-ios'">
+    <Reference Include="TestUsabillaBindingIos">
+    <HintPath>..\Usabilla\Ios\bin\Debug\net7.0-ios\UsabillaBindingIos.dll</HintPath>
+    </Reference>
+</ItemGroup>
+```
+* The HintPaths should be changed to the location where you cloned our repository
+The iOS reference is directly targeting the assembly of the project (only available after a succesfull build). This is because on the time of writing the project reference of a iOS binding project isn't working in Visual Studio.
+
 
 Once you have added the project to your solution, you should be able to use it as normal.
 

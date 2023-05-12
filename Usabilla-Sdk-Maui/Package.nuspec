@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>UsabillaSdkMaui</id>
+    <version>1.0.0</version>
+    <authors>Niels van der Knaap</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <description>A nuget package that binds the native Usabilla SDKs to .NET MAUI.</description>
+    <releaseNotes>Initial version of the binding library, includes the binding to the native iOS and Android SDK.</releaseNotes>
+    <copyright>$copyright$</copyright>
+    <tags>Usabilla feedback</tags>
+    <dependencies>
+      <group targetFramework="net7.0-android33.0">
+        <dependency id="Xamarin.AndroidX.Activity" version="1.6.1.1" />
+		<dependency id="Xamarin.AndroidX.Annotation" version="1.5.0.2" />
+		<dependency id="Xamarin.AndroidX.Annotation.Experimental" version="1.3.0.2" />
+		<dependency id="Xamarin.AndroidX.AppCompat" version="1.6.0.1" />
+		<dependency id="Xamarin.AndroidX.AppCompat.AppCompatResources" version="1.6.0.1" />
+		<dependency id="Xamarin.AndroidX.AppCompat.Resources" version="1.1.0.2" />
+		<dependency id="Xamarin.AndroidX.Arch.Core.Common" version="2.1.0.17" />
+		<dependency id="Xamarin.AndroidX.Arch.Core.Runtime" version="2.1.0.17" />
+		<dependency id="Xamarin.AndroidX.AsyncLayoutInflater" version="1.0.0.16" />
+		<dependency id="Xamarin.AndroidX.Collection" version="1.2.0.6" />
+		<dependency id="Xamarin.AndroidX.CoordinatorLayout" version="1.2.0.4" />
+		<dependency id="Xamarin.AndroidX.Core" version="1.9.0.2" />
+		<dependency id="Xamarin.AndroidX.CursorAdapter" version="1.0.0.16" />
+		<dependency id="Xamarin.AndroidX.CustomView" version="1.1.0.15" />
+		<dependency id="Xamarin.AndroidX.DocumentFile" version="1.0.1.16" />
+		<dependency id="Xamarin.AndroidX.DrawerLayout" version="1.1.1.11" />
+		<dependency id="Xamarin.AndroidX.ExifInterface" version="1.3.5.1" />
+		<dependency id="Xamarin.AndroidX.Fragment" version="1.5.5.1" />
+		<dependency id="Xamarin.AndroidX.Interpolator" version="1.0.0.16" />
+		<dependency id="Xamarin.AndroidX.Legacy.Support.Core.UI" version="1.0.0.17" />
+		<dependency id="Xamarin.AndroidX.Legacy.Support.Core.Utils" version="1.0.0.16" />
+		<dependency id="Xamarin.AndroidX.Lifecycle.Common" version="2.5.1.2" />
+		<dependency id="Xamarin.AndroidX.Lifecycle.LiveData.Core" version="2.5.1.2" />
+		<dependency id="Xamarin.AndroidX.Lifecycle.Runtime" version="2.5.1.2" />
+		<dependency id="Xamarin.AndroidX.Lifecycle.ViewModel" version="2.5.1.2" />
+		<dependency id="Xamarin.AndroidX.Lifecycle.ViewModelSavedState" version="2.5.1.2" />
+		<dependency id="Xamarin.AndroidX.Loader" version="1.1.0.16" />
+		<dependency id="Xamarin.AndroidX.LocalBroadcastManager" version="1.1.0.4" />
+		<dependency id="Xamarin.AndroidX.Media" version="1.6.0.3" />
+		<dependency id="Xamarin.AndroidX.Migration" version="1.0.10" />
+		<dependency id="Xamarin.AndroidX.MultiDex" version="2.0.1.16" />
+		<dependency id="Xamarin.AndroidX.Print" version="1.0.0.16" />
+		<dependency id="Xamarin.AndroidX.RecyclerView" version="1.2.1.9" />
+		<dependency id="Xamarin.AndroidX.SavedState" version="1.2.0.2" />
+		<dependency id="Xamarin.AndroidX.SlidingPaneLayout" version="1.2.0.4" />
+		<dependency id="Xamarin.AndroidX.SwipeRefreshLayout" version="1.1.0.11" />
+		<dependency id="Xamarin.AndroidX.Tracing.Tracing" version="1.1.0.3" />
+		<dependency id="Xamarin.AndroidX.VectorDrawable" version="1.1.0.16" />
+		<dependency id="Xamarin.AndroidX.VectorDrawable.Animated" version="1.1.0.16" />
+		<dependency id="Xamarin.AndroidX.versionedParcelable" version="1.1.1.16" />
+		<dependency id="Xamarin.AndroidX.ViewPager" version="1.0.0.16" />
+		<dependency id="Xamarin.Bindings.Volley" version="1.0.0" />
+		<dependency id="Xamarin.Jetbrains.Annotations" version="24.0.0.1" />
+		<dependency id="Xamarin.Kotlin.StdLib" version="1.8.10" />
+		<dependency id="Xamarin.Kotlin.StdLib.Common" version="1.8.10" />
+		<dependency id="Xamarin.Kotlin.StdLib.Jdk7" version="1.8.10" />
+		<dependency id="Xamarin.Kotlin.StdLib.Jdk8" version="1.8.10" />
+		<dependency id="Xamarin.KotlinX.Coroutines.Android" version="1.6.4.2" />
+		<dependency id="Xamarin.KotlinX.Coroutines.Core" version="1.6.4.2" />
+		<dependency id="Xamarin.KotlinX.Coroutines.Core.Jvm" version="1.6.4.2" />
+      </group>
+    </dependencies>
+
+	<frameworkAssemblies>
+      <frameworkAssembly assemblyName="System" targetFramework="net7.0-ios16.1" />
+      <frameworkAssembly assemblyName="Xamarin.iOS" targetFramework="net7.0-ios16.1" />
+      <frameworkAssembly assemblyName="Java.Interop" targetFramework="net7.0-android33.0" />
+      <frameworkAssembly assemblyName="Mono.Android" targetFramework="net7.0-android33.0" />
+      <frameworkAssembly assemblyName="System.Core" targetFramework="net7.0-android33.0" />
+      <frameworkAssembly assemblyName="System" targetFramework="net7.0-android33.0" />
+      <frameworkAssembly assemblyName="System.Xml" targetFramework="net7.0-android33.0" />
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+     <file src="README.md" target="" />
+
+	 <file src="android/bin/Release/net7.0-android/ubform-7.6.5.aar" target="lib/net7.0-android33.0/" />
+     <file src="android/bin/Release/net7.0-android/UsabillaSdkAndroid.dll" target="lib/net7.0-android33.0/" />
+     <file src="android/bin/Release/net7.0-android/UsabillaSdkAndroid.xml" target="lib/net7.0-android33.0/" />
+     <file src="android/bin/Release/net7.0-android/UsabillaSdkAndroid.aar" target="lib/net7.0-android33.0/" />
+
+     <file src="ios/bin/Release/net7.0-ios/UsabillaSdkIos.dll" target="lib/net7.0-ios16.1/" />
+	 <file src="ios/bin/Release/net7.0-ios/UsabillaSdkIos.pdb" target="lib/net7.0-ios16.1/" />
+	 <file src="ios/bin/Release/net7.0-ios/UsabillaSdkIos.resources/manifest" target="lib/net7.0-ios16.1/UsabillaSdkIos.resources" />
+	 
+     <file src="ios/bin/Release/net7.0-ios/UsabillaSdkIos.resources/UsabillaCS.framework/Info.plist" target="lib/net7.0-ios16.1/UsabillaSdkIos.resources/UsabillaCS.framework" />
+     <file src="ios/bin/Release/net7.0-ios/UsabillaSdkIos.resources/UsabillaCS.framework/UsabillaCS" target="lib/net7.0-ios16.1/UsabillaSdkIos.resources/UsabillaCS.framework" />
+     <file src="ios/bin/Release/net7.0-ios/UsabillaSdkIos.resources/UsabillaCS.framework/Headers/Usabilla-Swift.h" target="lib/net7.0-ios16.1/UsabillaSdkIos.resources/UsabillaCS.framework/Headers" />
+     <file src="ios/bin/Release/net7.0-ios/UsabillaSdkIos.resources/UsabillaCS.framework/Headers/Usabilla.h" target="lib/net7.0-ios16.1/UsabillaSdkIos.resources/UsabillaCS.framework/Headers" />
+     <file src="ios/bin/Release/net7.0-ios/UsabillaSdkIos.resources/UsabillaCS.framework/Modules/module.modulemap" target="lib/net7.0-ios16.1/UsabillaSdkIos.resources/UsabillaCS.framework/Modules" />
+ </files>
+</package>

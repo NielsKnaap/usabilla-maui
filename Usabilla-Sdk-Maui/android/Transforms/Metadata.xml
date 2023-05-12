@@ -1,0 +1,43 @@
+﻿<metadata>
+    <remove-node path="/api/package[@name='com.usabilla.sdk.ubform.customViews']/class[@name='SliderSeekBar']" /> 
+    <remove-node path="/api/package[@name='com.usabilla.sdk.ubform.customViews']/class[@name='StarRatingBar']" /> 
+    <remove-node path="/api/package[@name='com.usabilla.sdk.ubform.customViews']/class[@name='CheckableImageView']" /> 
+    
+    <remove-node path="/api/package[@name='com.usabilla.sdk.ubform.sdk.form.presenter']/class[@name='FormPresenter']" />
+    <remove-node path="/api/package[@name='com.usabilla.sdk.ubform.sdk.page.presenter']/class[@name='BasePagePresenter']" />
+    <remove-node path="/api/package[@name='com.usabilla.sdk.ubform.sdk.page.presenter']/class[@name='PagePresenter']" />
+    <remove-node path="/api/package[@name='com.usabilla.sdk.ubform.sdk.page.view']/class[@name='PageView']" />
+    
+    <remove-node path="/api/package[@name='com.usabilla.sdk.ubform.sdk.form']/class[@name='BaseForm']"/>
+    <remove-node path="/api/package[@name='com.usabilla.sdk.ubform.sdk.form']/class[@name='PassiveFormFragment']" />
+    <remove-node path="/api/package[@name='com.usabilla.sdk.ubform.sdk.form']/class[@name='CampaignFormFragment']" />
+    <remove-node path="/api/package[@name='com.usabilla.sdk.ubform.sdk.form.model']/class[@name='FormModel']" />
+  
+    <remove-node path="/api/package[@name='com.usabilla.sdk.ubform.eventengine.rules']/class[@name='BaseRule']" />
+    <remove-node path="/api/package[@name='com.usabilla.sdk.ubform.sdk.field.presenter.common']/class[@name='FieldPresenter']" />
+
+    <remove-node path="/api/package[@name='com.usabilla.sdk.ubform.sdk.field.model']/class[@name='TextBoxModel']" />
+    <remove-node path="/api/package[@name='com.usabilla.sdk.ubform.net.http']/class[@name='UsabillaInternalRequest']" />
+    
+    <remove-node path="/api/package[@name='com.usabilla.sdk.ubform.utils.ext']/class[@name='ExtensionBitmapKt']" />
+    <remove-node path="/api/package[@name='com.usabilla.sdk.ubform.screenshot.camera']/class[@name='UbSize']" />
+    <remove-node path="/api/package[@name='com.usabilla.sdk.ubform.screenshot.camera']/class[@name='UbAspectRatio']" />
+    <remove-node path="/api/package[@name='com.usabilla.sdk.ubform.screenshot.camera']/class[@name='UbCameraPresenter']" />
+    <remove-node path="/api/package[@name='com.usabilla.sdk.ubform.screenshot.annotation']/class[@name='UbAnnotationPresenter']" />
+
+    <remove-node path="/api/package[@name='com.usabilla.sdk.ubform.di']/class[@name='Module']" />
+
+    <attr path="/api/package[@name='com.usabilla.sdk.ubform.sdk.form.model']/class[@name='UbFonts.Creator']/method[@name='newArray']" name="managedReturn">Java.Lang.Object[]</attr>
+    <attr path="/api/package[@name='com.usabilla.sdk.ubform.sdk.form.model']/class[@name='UbFonts.Creator']/method[@name='createFromParcel']" name="managedReturn">Java.Lang.Object</attr>
+                                    
+    <attr path="/api/package[@name='com.usabilla.sdk.ubform.sdk.form.model']/class[@name='UbImages.Creator']/method[@name='newArray']" name="managedReturn">Java.Lang.Object[]</attr>
+    <attr path="/api/package[@name='com.usabilla.sdk.ubform.sdk.form.model']/class[@name='UbImages.Creator']/method[@name='createFromParcel']" name="managedReturn">Java.Lang.Object</attr>
+
+    <attr path="/api/package[@name='com.usabilla.sdk.ubform.sdk.entity']/class[@name='FeedbackResult.Creator']/method[@name='newArray']" name="managedReturn">Java.Lang.Object[]</attr>
+    <attr path="/api/package[@name='com.usabilla.sdk.ubform.sdk.entity']/class[@name='FeedbackResult.Creator']/method[@name='createFromParcel']" name="managedReturn">Java.Lang.Object</attr>
+
+    <attr path="/api/package[@name='com.usabilla.sdk.ubform']" name="managedName">UsabillaAndroid</attr>
+    <attr path="/api/package[@name='com.usabilla.sdk.ubform']/interface[@name='UsabillaFormCallback']/method[@name='formLoadSuccess']/parameter[@name='p0']" name="managedName">parameter</attr>
+</metadata>
+
+
